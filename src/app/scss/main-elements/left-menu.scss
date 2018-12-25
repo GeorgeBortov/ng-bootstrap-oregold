@@ -1,0 +1,148 @@
+.left-menu {
+	padding-top: 21px;
+	padding-right: 0;
+	box-shadow: 1.5px 2px 4.5px 0 rgba(0, 1, 0, 0.05);
+	z-index: 1;
+	&__lang {
+		&--option {
+			font-size: 1.2rem;
+			span, img {
+				vertical-align: middle;
+			}
+			span {
+				margin-left: 5px;
+			}
+		}
+	}
+	&__nav {
+	    position: fixed;
+	   	top: 140px;
+	    left: 0;
+	    padding-left: 15px;
+	    font-weight: 700;
+		width: 16.6666666667%;
+		@media only screen and (max-width:1199px) {
+			width: 25%;
+		}
+		@media only screen and (max-height:800px) {
+			top: 125px;
+		}
+	}
+	&__nav-item {
+		border-bottom: 2px solid transparent;
+		color: $mainColor;
+		display: block;
+		font-size: 1.5rem;
+		margin-top: 14px;
+		padding-bottom: 6px;
+		&--active,
+		&:hover {
+			border-bottom-color: #ebb100;
+			color: $mainColor;
+			text-decoration: none;
+		}
+	}
+	&__bottom-block {
+		background: #FFF;
+		bottom: 0;
+		position: absolute;
+		left: 0;
+		padding: 0 15px 20px 15px;
+		text-align: center;
+		width: 100%;
+	}
+	&__soc-icons{
+		margin-bottom: 15px;
+    	padding-top: 10px;
+		a {
+			color: $mainColor;
+			display: inline-block;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	&__soc-icon {
+		color: $mainColor;
+		font-size: 21px;
+		margin: 3px;
+		&:hover {
+			color: #20201c;
+		}
+	}
+	&__contacts {
+		display: inline-block;
+		font-size: 1.4rem;
+		width: 100%;
+	}
+	&__info {
+		display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	    -webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	    -webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    -webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	    align-content: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	}
+	&__tell {
+		font-size: 1.3rem;
+		font-weight: bold;
+		white-space: nowrap;
+		strong {
+			font-weight: 900;
+		}
+	}
+	&__safe {
+		color: #69925b;
+		display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	    -webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	    -webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    -webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	    align-content: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+		align-items: center;
+		margin-left: 5px;
+		&--icon {
+			display: block;
+			font-size: 30px;
+		}
+		&--text {
+			display: block;
+			margin-left: 5px;
+			text-align: left;
+			font-weight: 900;
+			line-height: 1.2;
+			font-size: 1.3rem;
+			text-transform: uppercase;
+		}
+	}
+	&__banca-info {
+		font-size: 1.3rem;
+		margin-top: 15px;
+		line-height: 1.42;
+		text-align: left;
+	}
+
+}

@@ -1,0 +1,46 @@
+.our-products {
+    &__wrap {
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1024px;
+    }
+    &__item {
+        margin-bottom: 35px;
+    }
+}
+.our-products-silgle {
+    text-align: center;
+    &__title {
+        margin: 25px auto;
+        h1 {
+            font-size: 1.78rem;
+        }
+    }
+    &__item {
+        border-bottom: 1px solid #e5e4db;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        .monet-info__thumb {
+            margin-right: 40px;
+            width: auto;
+        }
+        .monet-info__type {
+            font-size: 1.25rem;
+        }
+        .monet-info__title {
+            font-size: 3.2rem;
+        }
+        .monet-info__cat {
+            font-size: 1.5rem;
+            margin-top: 2px;
+        }
+        .monet-info__kt-gr--top-margin {
+            font-size: 1.7rem;
+            margin-top: 25px;
+        }
+    }
+    &__wrap {
+        display: inline-block;
+    }
+}

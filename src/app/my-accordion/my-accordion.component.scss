@@ -1,0 +1,76 @@
+// // mixins
+// @import "../scss/mixins/css3-mixins.scss";
+// // base settings
+// @import "../scss/base.scss";
+// // main styles
+// @import "../scss/main-elements/header.scss";
+// @import "../scss/main-elements/left-menu.scss";
+// @import "../scss/main-elements/main-content.scss";
+// @import "../scss/main-elements/footer.scss";
+// @import "../scss/main-elements/pages-elements.scss";
+@import "../scss/main.scss";
+.faq {
+	text-align: left;
+	.text-block-wrap {
+		max-width: 1024px;
+	}
+	.accordion {
+		border-bottom: 1px solid #e5e4db;
+		.card {
+			background: none;
+			border: none;
+			@include border-radius(0);
+			border-top: 1px solid #e5e4db;
+		}
+		.card-header {
+			background: none;
+			border: none;
+			@include border-radius(0);
+			color: #bc8510;
+			padding: 8px 8px;
+		}
+		.btn {
+			color: $dark-yellow-link;
+			text-align: left;
+			display: block;
+			font-size: 1.6rem;
+			font-weight: bold;
+			padding: 0;
+			width: 100%;
+			position: relative;
+			&:before {
+				content: '\e921';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				@include transform(translateY(-50%));
+				font-family: 'Oregold-safe' !important;
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			&:focus {
+				text-decoration: none;
+			}
+			&:hover {
+				color: darken($dark-yellow-link, 10%);
+				text-decoration: none;
+			}
+		}
+		.btn.collapsed {
+			&:before {
+				content: '\e920';
+			}
+		}
+		.card-body {
+			font-size: 1.5rem;
+			line-height: 1.7;
+			padding: 3px 8px 20px 8px;
+		}
+	}	
+}

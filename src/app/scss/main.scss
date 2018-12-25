@@ -1,0 +1,18 @@
+// bootstrap 4
+// @import "bootstrap/bootstrap.scss";
+// mixins
+@import "mixins/css3-mixins.scss";
+// base settings
+@import "base.scss";
+// main styles
+@import "main-elements/header.scss";
+@import "main-elements/left-menu.scss";
+@import "main-elements/main-content.scss";
+@import "main-elements/footer.scss";
+@import "main-elements/pages-elements.scss";
+// Pages
+// @import "pages/come-funziona.scss";
+// @import "pages/chi-siamo.scss";
+// @import "pages/faq.scss";
+// @import "pages/news-e-appuntamenti.scss";
+// @import "pages/nostri-prodotti.scss";

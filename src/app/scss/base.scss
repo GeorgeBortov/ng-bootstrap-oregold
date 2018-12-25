@@ -1,0 +1,42 @@
+// variables
+$mainColor: #605d4d;
+$ligth-gray: #f7f7f7;
+$ligth-yellow: #fef3e1;
+$yellow: #ebb100;
+$dark-yellow: #bc8510;
+$green: #69925b;
+$gray: #a7a289;
+$dark-yellow-link: #c4900d;
+$red: #942d1f;
+$greyish-brown: #575555;
+// settings
+html {
+  font-size: 62.5%;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	color: $mainColor;
+    -webkit-box-sizing: border-box;
+   	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 1024px;
+}
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
+}
+strong {
+	font-weight: bold;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+}
